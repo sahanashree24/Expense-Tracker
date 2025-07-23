@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0% auto;
+}
+
+.title {
+  text-align: center;
+  color: slateblue;
+}
+
+.dashboard {
+   width: 60vw;
+   margin: 0% auto;
+   background-image: linear-gradient(to right bottom, #30bf44,#01baef);
+   padding: 20px;
+   border-radius: 10px;
+   color:#fff;
+   line-height: 35px;
+   margin-top: 1rem;
+}
+
+.dashboard .dashboardBottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dashboard p {
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.dashboard .balance { color: #222;}
+.dashboard .income { color: #232a;}
+.dashboard .expense { color: #ff2034;}
+
+.expenseForm {
+   width: 100%;
+}
+
+.expenseForm form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form .form-item {
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.expenseForm form .form-input {
+  padding: 12px 10px;
+  width: 100%;
+  outline: none;
+  border: none;
+}
+
+.btn {
+  border: none;
+  padding: 10px 12px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #222;
+  color: #fff;
+}
+
+.btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 30%;
+  gap: 4px;
+}
+
+.expenseList {
+  padding: 10px;
+  width: 60vw;
+  background-color: #ccc;
+  margin: 0% auto;
+  margin-top: 1rem;
+  border-radius: 10px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.list {
+  width: 100%;
+}
+
+.list .list-item{
+  background-color: #fff;
+  padding: 10px;
+  list-style: none;
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 6px;
+}
+
+.btn.info {
+  background-color: #01baef;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.btn.danger {
+  background-color: #ff2034;
+  border-radius: 4px;
+  width: 100%;
+}
